@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Banking FAQs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+  
+      .tab {
+        display: inline-block;
+        padding: 5px 15px;
+        cursor: pointer;
+        background-color: #e5e7ee;
+        margin-right: -5px;
+        color: #3d5bb5;
+        border-radius: 4px;
+        width: 42%;
+      }
+  
+      .tab.active {
+        background-color: #132C6F;
+        color: rgb(220, 226, 231);
+      }
+  
+      /* .selectionTab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #e5e7ee;
+        width: 100%;
+        border-radius: 10px;
+      } */
+  
+      h1 {
+        font-size: 25px;
+        background-color: white;
+        color: #475FB7;
+      }
+  
+      .selection {
+        max-width: 100%;
+        margin: auto;
+      }
+  
+      .selection>p,
+      .selection>h1 {
+        margin: 1.5rem 0;
+        text-align: center;
+      }
+  
+      .selection>h1 {
+        letter-spacing: 3px;
+      }
+  
+      .accordion {
+        /* background-color: #f9f9f9; */
+        color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        font-size: 14px;
+        width: 100%;
+        /* padding: 14px; */
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        text-align: left;
+        color: #596ba2;
+      }
+  
+      /* .accordion b{
+        font-family: 'Battambang';
+      } */
+      .accordion ul,
+      li {
+        /* font-family: "ITC Avant Garde Std"; */
+        font-size: 12px;
+      }
+      .accordion i {
+        font-size: 12px;
+      }
+  
+      .pannel {
+        padding: 0 2mm 2.5mm 1mm;
+        color: black;
+        overflow: hidden;
+        background-color: #ffffff;
+        display: none;
+      }
+  
+      .pannel p {
+        font-size: 12px;
+        /* line-height: 1.4; */
+      }
+  
+      .faq {
+        /* border: 1px solid rgba(0, 0, 0, 0.2); */
+        margin: 10px 0;
+      }
+  
+      .faq.active {
+        border: none;
+      }
+  
+      .menu ul {
+        margin: 0;
+        padding: 0;
+      }
+  
+      .menu li {
+        list-style-type: none;
+      }
+  
+      .menu li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 0.9rem;
+      }
+  
+      .content {
+        display: none;
+        /* padding: 20px; */
+        margin-top: 10px;
+        background-color: #f9f9f9;
+      }
+  
+      .content.active {
+        display: block;
+      }
+  
+      .selection h2 {
+        padding: 20px;
+        font-size: 20px;
+      }
+      body{
+        /* background-color: #f9f9f9; */
+        font-family: "Khmer MEF1";
+      }
+    </style>
+</head>
+
+<body>
+  <div class="selectionTab">
+    <div class="tab active" onclick="showContent('mobile_banking', this)">Mobile Banking</div>
+    <div class="tab" onclick="showContent('internet_banking', this)">Internet Banking</div>
+  </div>
+  <div class="selection">
+    <div id="mobile_banking" class="content active">
+      <h1>&ensp;FAQ</h1><hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q1. What is SME Mobile App? </b>
+        </p>
+        <div class="pannel">
+          <p>SME Mobile is an application running on Smart Phone that has internet access, enabling customers to perform
+            banking transactions conveniently, securely from anywhere, anytime. You can activate your existing SME bank
+            account or open a new account easily.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q2. Why should you choose to use SME mobile? </b>
+        </p>
+        <div class="pannel">
+          <p>SME Mobile provides convenient and fast way of banking transactions with commonly use functions such
+            as Fund Transfer, Mobile Tup Up, Bill Payment, Account Management, etc.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q3. What are the functions of SME Mobile? </b>
+        </p>
+        <div class="pannel">
+          <ul type="square">
+            <li>Account Management</li>
+            <ul>
+              <li> View balance and activities in your accounts </li>
+              <li> Download account statement. </li>
+              <li> Set profile picture and view profile information. </li>
+              <li> Set your prefer language to Khmer, or English </li>
+            </ul>
+            <li>Open new Saving Account </li>
+            <li>Open new Fixed Deposit Account </li>
+            <li>Apply Loan</li>
+            <li>KHQR</li>
+            <ul>
+              <li> Scan QR </li>
+              <li> Generate QR </li>
+            </ul>
+            <li>Money Transfer </li>
+            <ul>
+              <li> Transfer between own accounts </li>
+              <li> Transfer to other SME accounts </li>
+              <li> Local Bank transfer via Bakong </li>
+            </ul>
+            <li>Mobile Top Up </li>
+            <li>Bill Payment </li>
+            <li>Manage Favorite Transfer and Payment </li>
+            <li>Schedule Transfer and Payment </li>
+            <li>Products & Services </li>
+            <li>Locate Us (Branch & ATM) </li>
+            <li>Security Setting</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q4. What are the requirements to use SME Mobile? </b>
+        </p>
+        <div class="pannel">
+          <ul type="square">
+            <li>Having a mobile phone running Android OS v12 or higher / Apple iOS v15 or higher. </li>
+            <li>With internet access, download and install the SME Mobile App from Play Store or App Store.</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q5. How to activate SME Mobile? </b>
+        </p>
+        <div class="pannel">
+          <p>If you already have account(s) with SME Bank of Cambodia, you need to:</p>
+          <ul type="square">
+            <li>Follow the instructions to Activate Mobile by providing the required information.</li>
+            <li>Have the valid mobile number that you registered with your account.</li>
+            <li>Agree to terms and conditions!</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q6. How to open a new account using SME Mobile? </b>
+        </p>
+        <div class="pannel">
+          <p> If you do not have SME Bank account yet, please follow the below requirements:</p>
+          <ul type="square">
+            <li>Follow the instructions to <b>Open New Account</b> by providing the required information.</li>
+            <li>Age from 18 years old.</li>
+            <li>Having valid phone number (local) </li>
+            <li>
+              Having Cambodia ID card
+            </li>
+            <li>
+              Agreed to terms and conditions!
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q7. How many devices can I connect to SME Mobile? </b>
+        </p>
+        <div class="pannel">
+          <p>Based on security reasons, you can connect only one device with SME Mobile.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q8. What will happen if I change my device? </b>
+        </p>
+        <div class="pannel">
+          <p>Just log in to the account on your new device. The information in your previous device will log out
+            immediately.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q9. What should I do if I lost my mobile phone?</b>
+        </p>
+        <div class="pannel">
+          <p>Your SME Mobile is still safe and secure as it needs a PIN to authorize login. To block your account,
+            please visit the nearest SME Bank branches or contact our Care Center number: 096 8111 118.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q10. What is OTP code? </b>
+        </p>
+        <div class="pannel">
+          <p>A one-time password (OTP) is a password which is valid for only one login session or transaction.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q11. What if I have not received OTP code via SMS? </b>
+        </p>
+        <div class="pannel">
+          <p>Please try these simple steps:</p>
+          <ul type="square">
+            <li>Clear old message data.</li>
+            <li>Refresh the phone's service by turning off airplane mode then turning it on.</li>
+            <li>Trying on p “Resend” after refreshing phone's service.</li>
+            <li>Find a better place for phone service.</li>
+          </ul>
+          <p> You can visit the nearest SME bank's branches or contact Care Center number: 096 8111 118.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q12. What should I do if I forgot my PIN/Password? </b>
+        </p>
+        <div class="pannel">
+          <p>Please click on the "Forgot PIN" menu, then follow the instructions on SME Mobile App.
+            Please click on the "Forgot Password" menu, then follow the instructions on SME Mobile App.
+            You can visit the nearest SME Bank's branches or contact Care Centre number: 096 8111 118.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="faq">
+        <p class="accordion">
+          <b><i class="fa-solid fa-play"></i> Q13. Need help & support?</b>
+        </p>
+        <div class="pannel">
+          <p>If your need more information or assistance, please visit the nearest SME Bank’s branches or contact to our
+            Care Center number: 096 8111 118.</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div id="internet_banking" class="content">
+      <h1>&ensp;Comming Soon</h1>
+    </div>
+  </div>
+  <script>
+     var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        var panel = this.nextElementSibling;
+        var allPanels = document.querySelectorAll('.pannel');
+        for (var j = 0; j < allPanels.length; j++) {
+          if (allPanels[j] !== panel) {
+            allPanels[j].style.display = 'none';
+            allPanels[j].previousElementSibling.querySelector('.fa-solid').classList.remove('rotate');
+            allPanels[j].parentElement.classList.remove('active');
+          }
+        }
+        this.parentElement.classList.toggle("active");
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+          this.querySelector('.fa-solid').classList.remove("rotate");
+        } else {
+          panel.style.display = "block";
+          this.querySelector('.fa-solid').classList.add("rotate");
+        }
+      });
+    }
+    function showContent(tabId, clickedTab) {
+      var tabs = document.querySelectorAll('.tab');
+      var contents = document.querySelectorAll('.content');
+
+      tabs.forEach(function (tab) {
+        tab.classList.remove('active');
+      });
+
+      contents.forEach(function (content) {
+        content.classList.remove('active');
+      });
+      var selectedTab = document.getElementById(tabId);
+      var selectedContent = document.getElementById(tabId);
+
+      if (selectedTab && selectedContent) {
+        selectedTab.classList.add('active');
+        selectedContent.classList.add('active');
+      }
+      // Set background color for the clicked tab
+      clickedTab.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
